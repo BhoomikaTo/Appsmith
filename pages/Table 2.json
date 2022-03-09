@@ -1,0 +1,193 @@
+{
+  "unpublishedPage": {
+    "name": "Table 2",
+    "slug": "table-2",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 742,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 570,
+          "containerStyle": "none",
+          "snapRows": 53,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 51,
+          "minHeight": 540,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Table1",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "student_id",
+                "student_name",
+                "student_roll",
+                "class_name"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+              "topRow": 7,
+              "bottomRow": 55,
+              "isSortable": true,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 11.40625,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.student_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.student_name.computedValue"
+                },
+                {
+                  "key": "primaryColumns.student_roll.computedValue"
+                },
+                {
+                  "key": "primaryColumns.class_name.computedValue"
+                }
+              ],
+              "leftColumn": 4,
+              "primaryColumns": {
+                "student_id": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "student_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "student_id",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.student_id))}}"
+                },
+                "student_name": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "student_name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "student_name",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.student_name))}}"
+                },
+                "student_roll": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "student_roll",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "student_roll",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.student_roll))}}"
+                },
+                "class_name": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "class_name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "class_name",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.class_name))}}"
+                }
+              },
+              "delimiter": ",",
+              "key": "c83uqm5k8t",
+              "derivedColumns": {},
+              "rightColumn": 59,
+              "textSize": "PARAGRAPH",
+              "widgetId": "s9jefayc79",
+              "isVisibleFilters": true,
+              "tableData": "{{Table.data}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "enableClientSideSearch": true,
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Table 2_Table",
+              "name": "Table",
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Table 2",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "6203423c8c34464c1c2fe4db_621c636c52df83079ac94ba5"
+}
